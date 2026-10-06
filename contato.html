@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="folha_estilo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Explore o Mundo</span>
+        </div>
+        <div class="navegacao">
+            <nav class="menu-links">
+                <a href="index.html">Início</a>
+                <a href="destino.html">Destinos</a>
+                <a href="sobre_nos.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <div class="redes-sociais">
+                <a href="" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </header>
+        <main class="container">
+            <h1 class="titulo-secao">Nossa Empresa</h1>
+            <p class="subtitulo">Garanta a melhor experiência!</p>
+            <div class="Conteudo">
+                <p class="informacoes">Informações</p>
+                <form action="/processar-cadastro" method="post" class="coluna-form">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required minlength="3" maxlength="50"> <br><br>
+
+                <label for="CPF/CNPJ">CPF/CNPJ:</label>
+                <input type="password" id="cpf" name="cnpj" placeholder="Informe seu CPF/CNPJ" required minlength="8" maxlength="20"><br><br>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com"><br><br>
+
+                <label for="telefone">Data</label>
+                <input type="date" id="data" name="data" placeholder="Dia da Viagem" required><br><br>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Informe seu Telefone" min="1900-01-01" max="2026-12-31" required><br><br>
+
+                <label for="local">Selecione a Cidade</label>
+                <select name="loc" id="loc" required>
+                    <option value="" disa selected>Selecione uma Cidade</option>
+                    <option value="seul">Seul(Coreia do Sul)</option>
+                    <option value="roma">Roma(Itália)</option>
+                    <option value="paris">Paris(França)</option>
+                    <option value="munique">Munique(Alemanha)</option>
+                    <option value="cabo">Cidade do Cabo(África do Sul)</option>
+                    <option value="la paz">La Paz(Bolívia)</option>
+                    <option value="vancouver">Vancouver(Canadá)</option>        
+                    <option value="xangai">Xangai(China)</option>
+                    <option value="barcelona">Barcelona(Espanha)</option>
+                </select><br><br>
+            </div>
+        </main>
+        <footer class="rodape">
+            <div class="Conteudo">
+                <p class="legenda">
+                Endereço: Av. Santos Dumont, 1420 – Conjunto 802 (Edifício Horizon Tower) <br>
+                Bairro: Bairro do Recife <br>
+                Cidade/UF: Recife – PE <br>
+                CEP: 50030-230 <br>
+                País: Brasil <br>
+                Telefone: (81) 3878-9000 <br>
+                E-mail: empresa@viagens.com.br</p>
+            </div>
+        </footer>
+</body>
+</html>

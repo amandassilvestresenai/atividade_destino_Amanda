@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(0, 131, 133);
+    color: black;
+    line-height: 1.6;/*Espacamento entre linhas*/
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+    background-color: aqua;
+    color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 15px;
+    justify-content: space-between;
+    border-bottom: 2px solid #da0021;
+}
+.logo{
+    gap: 15px;
+    display: flex;
+    font-size: 20px;
+    color: rgb(89, 10, 163);
+    align-items: center;
+    font-weight: 600;
+    font-weight: bold;
+}
+.navegacao{
+    display: flex;
+    gap: 30px;
+}
+.menu-links a{
+    color: blueviolet;
+    font-size: 17px;
+    margin: 0 5px;
+    font-weight: 600;
+}
+.redes-sociais{
+    gap: 14px;
+    display: flex;
+    border-left: 1px solid ;
+    padding-left: 20px;
+}
+.redes-sociais a{
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.redes-sociais a:hover{
+    transform: scale(1.5);/*Aplica efeito de zoom no elemento*/
+}
+.menu-links a:hover{
+    color: rgb(0, 0, 0);
+}
+.redes-sociais a.whatsapp:hover{color: #25D366;}
+.redes-sociais a.facebook:hover{color: #1877F2;}
+.redes-sociais a.instagram:hover{color: #c4005b;}
+.redes-sociais a.twitter:hover{color: #ffffff;}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.coluna-form input[type="text"],
+.coluna-form input[type="password"],
+.coluna-form input[type="email"],
+.coluna-form input[type="date"],
+.coluna-form input[type="tel"],
+.coluna-form input[type="loc"],
+.coluna-form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background: color #000;
+    border: 5px;
+    color: #000;
+    font-size: 16px;
+}
+.imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    border-radius: 12px;
+    text-align: center;
+}
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: azure;
+}
+.texto h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px aqua;
+}
+.texto p{
+    font-size: 16px;
+    text-shadow: 0 2px 8px aqua;
+}
+.container{
+    max-width: 900px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulo{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgb(0, 68, 186);
+}
+.subtitulo{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    text-shadow: 0 2px 8px rgb(0, 68, 186);
+}
+.legenda{
+    font-size: 17px;
+    margin-top: 15px;
+    align-items: center;
+}
+.foto-1{
+    max-width: 420px;
+    height: 320px;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    box-shadow: 0 4px 12px #1877F2;
+    flex-direction: column;
+    overflow: hidden;
+}
+.rodape{
+    background-color: aqua;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 10px 14px;
+    text-shadow: 0 2px 8px rgb(0, 68, 186);
+    height: 260px;
+    width: 100%;
+}
+.rodap{
+    background-color: aqua;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px 14px;
+    text-shadow: 0 2px 8px rgb(0, 68, 186);
+    height: 50px;
+    width: 100%;
+    margin-top: 200px;
+}
+.rodapa{
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: aqua;
+    text-align: center;
+    text-shadow: 0 2px 8px rgb(0, 68, 186);
+}
+.text{
+    margin-bottom: 500px;
+    margin-top: 30px;
+    text-align: center;
+}
+.text h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px aqua;
+    position: relative;
+}
+.grade{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 25px;
+}
+.foto-1{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    
+}
+.informacoes{
+    font-size: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.menu a{
+    color: blueviolet;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.container{
+    max-width: 1200px ;/*Largura máxima da tela*/
+    margin: 40px auto;/*Margem*/
+    padding: 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulo-secao{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 2px 8px rgb(0, 68, 186);
+}
+.subtitulo{
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.grade-destino{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 25px;
+}
+.card-destino{
+    background-color: rgb(86, 60, 159);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #c95e5e;
+    display: flex;
+    flex-direction: column;
+}
+.card-destino:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px;
+}
+.poster{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+.Conteudo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.nome-destino{
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Sinopse{
+    font-size: 17px;
+    color: black;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Botao-comprar{
+    display: block;
+    text-align: center;
+    background-color: #ea00ff;
+    border-radius: 6px;
+    text-decoration: nome;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Botao-comprar:hover{
+    background-color: rgb(86, 60, 159);
+    font-family: 'Times New Roman', Times, serif;
+}
+.coluna-form{
+    flex: 1;/*Faz o formulário crescer proporcionalmente*/
+    min-width: 320px;
+    background-color: #8ae5e7;
+    padding: 30px;
+    border-radius: 10px;
+}
+.coluna-midia{
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.coluna-form label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+.botao{
+    font-size: 18px;
+    text-shadow: 0 2px 8px rgb(0, 68, 186);
+    background-color: aqua;
+    border-radius: 25px;
+}
+.txt{
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #7acae0;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px #1877F2(15, 9, 88, 0.2);
+    font-size: 16px;
+}
